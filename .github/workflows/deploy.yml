@@ -29,9 +29,11 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+        working-directory: ./github-frontend   # <-- chemin vers ton package.json
 
       - name: Build
         run: npm run build
+        working-directory: ./github-frontend   # <-- chemin vers ton projet Vite
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -39,7 +41,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "./dist"
+          path: ./github-frontend/dist       # <-- dossier build de Vite
 
   deploy:
     environment:
