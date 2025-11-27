@@ -15,7 +15,10 @@
   "homepage": "https://pablonoah.github.io/solar-app",
   "dependencies": {
     "react": "^19.2.0",
-    "react-dom": "^19.2.0"
+    "react-dom": "^19.2.0",
+    "framer-motion": "^11.11.17",
+    "lucide-react": "^0.263.1",
+    "recharts": "^2.15.0"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^5.1.1",
