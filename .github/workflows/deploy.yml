@@ -1,4 +1,3 @@
-# Workflow pour déployer le frontend sur GitHub Pages
 name: Deploy to GitHub Pages
 
 on:
@@ -18,6 +17,9 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./github-frontend  # ← AJOUT : définit le dossier de travail
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -39,7 +41,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist   # <-- dossier build de Vite à la racine
+          path: ./github-frontend/dist  # ← MODIFICATION : chemin vers le build
 
   deploy:
     environment:
