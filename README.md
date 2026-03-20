@@ -1,8 +1,8 @@
 # Green AI Solar -- Frontend
 
-React frontend for predicting solar panel efficiency. Connects to the [FastAPI backend](https://github.com/pablonoah/green-ai-solar-backend) which serves a GradientBoosting ML model.
+React frontend for predicting solar panel efficiency. Connects to the [FastAPI backend](https://github.com/noahlips/green-ai-solar-backend) which serves a GradientBoosting ML model.
 
-**Part of the [Green AI Solstice](https://github.com/pablonoah/Green_AI_Solstice) project -- ESILV**
+**Part of the [Green AI Solstice](https://github.com/noahlips/Green_AI_Solstice) project -- ESILV**
 
 ## Tech Stack
 
@@ -23,7 +23,7 @@ React frontend for predicting solar panel efficiency. Connects to the [FastAPI b
 ## Getting Started
 
 ```bash
-git clone https://github.com/pablonoah/solar-app.git
+git clone https://github.com/noahlips/solar-app.git
 cd solar-app
 npm install
 npm run dev
@@ -31,7 +31,7 @@ npm run dev
 
 Open [http://localhost:5173](http://localhost:5173) to view it.
 
-> Make sure the [backend](https://github.com/pablonoah/green-ai-solar-backend) is running for predictions to work.
+> Make sure the [backend](https://github.com/noahlips/green-ai-solar-backend) is running for predictions to work.
 
 ## Architecture
 
